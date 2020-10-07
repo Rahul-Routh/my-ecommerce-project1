@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    tools:context=".Activity.OrderPlacedActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/toolBar"
+        android:id="@+id/cartToolBar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal">
+
+            <TextView
+                style="@style/toolBarHeading"
+                android:textColor="@color/colorAccent"
+                android:text="@string/home" />
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="@drawable/address_background"-->
+<!--        android:gravity="center">-->
+
+<!--        -->
+
+<!--    </LinearLayout>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Vegetables Order after 2:00 PM will be Delivered on Next Day."
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:background="@drawable/address_background"
+        android:fontFamily="@font/avenir"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:gravity="center_vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/ic_shopping_done"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Congratulations"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:fontFamily="@font/avenir"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Placed Successfully"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/avenir"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Order Number is : "
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/avenir"/>
+
+            <TextView
+                android:id="@+id/order_id_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:background="@color/colorAccent"
+                android:fontFamily="@font/avenir"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/continue_shopping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:text="Continue Shopping"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:background="@drawable/button_green"
+            android:fontFamily="@font/avenir"/>
+    </LinearLayout>
+</LinearLayout>

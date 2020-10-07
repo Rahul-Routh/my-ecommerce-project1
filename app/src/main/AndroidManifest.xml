@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.purpuligo.ajeevikafarmfresh">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".Activity.ContactUsActivity"></activity>
+        <activity
+            android:name=".Activity.SplashScreenActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Activity.CartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ProductListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.WishListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ProductDescriptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PaymentOptionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CodOrderSummeryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.AddressListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OrderHistoryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.GalleryActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.TermAndConditionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OnBoardingScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.ForgotPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.PrivacyPolicyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CustomerDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.EditUserDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.OrderHistoryDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.CheckoutAddressListActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="instamojo.orderauth.url"
+            android:value="http://purpuligo.com/guchhi/access_token.php" />
+
+        <activity
+            android:name=".Activity.CategoryListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SearchResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activity.SubCategoryActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Activity.OrderPlacedActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

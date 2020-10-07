@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteBackgroundColor"
+    tools:context=".Activity.AboutUsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/toolBar"
+        android:id="@+id/profileToolbar"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            style="@style/backStyle"
+            android:id="@+id/backBtn"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/toolBarHeading"
+                android:text="@string/aboutUs"
+                android:textColor="@color/whiteBackgroundColor"/>
+
+        </LinearLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<ImageView-->
+                <!--style="@style/cartStyle"-->
+                <!--android:id="@+id/cartBtn"/>-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/wishListBtn"-->
+                <!--style="@style/wishListStyle" />-->
+
+        <!--</RelativeLayout>-->
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/aboutUsText"
+                style="@style/termsAndConditionsSubHeading" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

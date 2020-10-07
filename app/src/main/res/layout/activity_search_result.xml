@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteBackgroundColor"
+    tools:context=".Activity.SearchResultActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/toolBar"
+        android:id="@+id/cartToolBar"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            style="@style/backStyle"
+            android:id="@+id/backBtn"/>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                style="@style/toolBarHeading"-->
+<!--                android:text="@string/searchList"-->
+<!--                android:textColor="@color/whiteBackgroundColor"/>-->
+
+<!--        </LinearLayout>-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="@style/searchViewProductdescription">
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/product_list_searchView"
+                android:layout_width="226dp"
+                android:layout_height="35dp"
+                android:background="@drawable/search_view_background"
+                app:queryHint="Enter Product Name">
+
+            </androidx.appcompat.widget.SearchView>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+            <!--style="@style/cartStyle"-->
+            <!--android:id="@+id/cartBtn"/>-->
+            <!--<ImageView-->
+            <!--android:id="@+id/wishListBtn"-->
+            <!--style="@style/wishListStyle" />-->
+
+            <RelativeLayout
+                android:onClick="cart"
+                style="@style/cartStyle">
+                <ImageButton
+                    android:onClick="cart"
+                    android:id="@+id/cartBtn"
+                    style="@style/cart_wishList_style"
+                    android:background="@drawable/cart_one"/>
+
+                <TextView
+                    android:onClick="cart"
+                    android:id="@+id/count_cart"
+                    style="@style/badge_design"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="7dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:onClick="wishList"
+                style="@style/wishListStyle">
+                <ImageButton
+                    android:onClick="wishList"
+                    android:id="@+id/wishListBtn"
+                    style="@style/cart_wishList_style"
+                    android:background="@drawable/wishlist_one"/>
+
+                <TextView
+                    android:onClick="wishList"
+                    android:id="@+id/count_wishList"
+                    style="@style/badge_design"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="7dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:background="@color/colorPrimaryDark">-->
+<!--        <androidx.appcompat.widget.SearchView-->
+<!--            android:id="@+id/product_list_searchView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="40dp"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            app:queryHint="Search"-->
+<!--            android:background="@drawable/search_view_background">-->
+
+<!--        </androidx.appcompat.widget.SearchView>-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:nestedScrollingEnabled="false"
+            android:background="@color/whiteBackgroundColor"
+            android:id="@+id/productListRecyclerView"
+            android:padding="5dp">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/emptyListIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_list"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/emptyListIndicator1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Match Found."
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

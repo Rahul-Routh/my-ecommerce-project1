@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/product_background_lite"
+    android:orientation="vertical"
+    tools:context=".Activity.ProfileActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/profileToolbar"
+        style="@style/toolBar"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            style="@style/backStyle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/toolBarHeading"
+                android:text="@string/profile"
+                android:textColor="@color/whiteBackgroundColor" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+            <!--style="@style/cartStyle"-->
+            <!--android:id="@+id/cartBtn"/>-->
+            <!--<ImageView-->
+            <!--android:id="@+id/wishListBtn"-->
+            <!--style="@style/wishListStyle" />-->
+
+            <RelativeLayout
+                style="@style/cartStyle"
+                android:onClick="cart">
+
+                <ImageButton
+                    android:id="@+id/cartBtn"
+                    style="@style/cart_wishList_style"
+                    android:background="@drawable/cart_one"
+                    android:onClick="cart" />
+
+                <TextView
+                    android:id="@+id/count_cart"
+                    style="@style/badge_design"
+                    android:onClick="cart"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="7dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/wishListStyle"
+                android:onClick="wishList">
+
+                <ImageButton
+                    android:id="@+id/wishListBtn"
+                    style="@style/cart_wishList_style"
+                    android:background="@drawable/wishlist_one"
+                    android:onClick="wishList" />
+
+                <TextView
+                    android:id="@+id/count_wishList"
+                    style="@style/badge_design"
+                    android:onClick="wishList"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="7dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="163dp"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="83dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-40dp"
+        android:layout_gravity="center"
+        android:background="@drawable/address_background">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/customerName"
+                    style="@style/cartRowEndTextView"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/customerEmail"
+                    style="@style/cartRowEndTextView"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="5dp"/>
+                </TableRow>
+        </TableLayout>
+<!--        <TableRow-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:weightSum="1">-->
+<!--        <TextView-->
+<!--            android:id="@+id/customerName"-->
+<!--            style="@style/cartRowEndTextView"-->
+<!--            android:layout_width="171dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="DEMO DEMO" />-->
+<!--        </TableRow>-->
+<!--        -->
+
+<!--        <TextView-->
+<!--            android:id="@+id/customerEmail"-->
+<!--            style="@style/cartRowEndTextView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_marginTop="28dp"-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:text="demo@gmail.com" />-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/forgotPassword"
+        style="@style/subHeadingName"
+        android:layout_width="106dp"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_white"
+        android:text="@string/profileForgotPassword"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        tools:ignore="RtlCompat" />
+<!--            <TextView-->
+<!--                android:id="@+id/forgotPassword"-->
+<!--                style="@style/subHeadingName"-->
+<!--                android:layout_gravity="end"-->
+<!--                android:layout_marginRight="10dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/whiteBackgroundColor"-->
+<!--                android:text="@string/profileForgotPassword"/>-->
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:background="@drawable/address_background"
+        android:orientation="vertical">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1">
+<!--        <TableRow-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:weightSum="1">-->
+<!--            <TextView-->
+<!--                style="@style/cartRowStartTextView"-->
+<!--                android:text="@string/profileName">-->
+<!--            </TextView>-->
+<!--            <TextView-->
+<!--                android:id="@+id/customerName"-->
+<!--                style="@style/cartRowEndTextView"-->
+<!--                android:gravity="start"-->
+<!--                android:layout_marginLeft="40dp">-->
+<!--            </TextView>-->
+<!--        </TableRow>-->
+
+<!--        <View style="@style/viewStyle"> </View>-->
+
+<!--        <TableRow-->
+<!--            android:layout_marginBottom="5dp"-->
+<!--            android:weightSum="1">-->
+<!--            <TextView-->
+<!--                style="@style/cartRowStartTextView"-->
+<!--                android:text="@string/profileEmail">-->
+<!--            </TextView>-->
+<!--            <TextView-->
+<!--                android:id="@+id/customerEmail"-->
+<!--                style="@style/cartRowEndTextView"-->
+<!--                android:gravity="start"-->
+<!--                android:layout_marginLeft="40dp">-->
+<!--            </TextView>-->
+<!--        </TableRow>-->
+
+<!--            <View style="@style/viewStyle"></View>-->
+
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+                <TextView
+                    style="@style/cartRowStartTextView"
+                    android:text="@string/profileAddress">
+                </TextView>
+                <TextView
+                    android:id="@+id/customerAddress"
+                    style="@style/cartRowEndTextView"
+                    android:gravity="start"
+                    android:layout_marginLeft="40dp">
+                </TextView>
+            </TableRow>
+
+            <View style="@style/viewStyle"></View>
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+                <TextView
+                    style="@style/cartRowStartTextView"
+                    android:text="@string/profileCity">
+                </TextView>
+                <TextView
+                    android:id="@+id/customerCity"
+                    style="@style/cartRowEndTextView"
+                    android:gravity="start"
+                    android:layout_marginLeft="40dp">
+                </TextView>
+            </TableRow>
+
+            <View style="@style/viewStyle"></View>
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+                <TextView
+                    style="@style/cartRowStartTextView"
+                    android:text="@string/profileState">
+                </TextView>
+                <TextView
+                    android:id="@+id/customerState"
+                    style="@style/cartRowEndTextView"
+                    android:gravity="start"
+                    android:layout_marginLeft="40dp">
+                </TextView>
+            </TableRow>
+
+            <View style="@style/viewStyle"></View>
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+                <TextView
+                    style="@style/cartRowStartTextView"
+                    android:text="@string/profilePostalCode">
+                </TextView>
+                <TextView
+                    android:id="@+id/customerPostalCode"
+                    style="@style/cartRowEndTextView"
+                    android:gravity="start"
+                    android:layout_marginLeft="40dp">
+                </TextView>
+            </TableRow>
+
+            <View style="@style/viewStyle"></View>
+            <TableRow
+                android:layout_marginBottom="5dp"
+                android:weightSum="1">
+                <TextView
+                    style="@style/cartRowStartTextView"
+                    android:text="@string/profileCountry">
+                </TextView>
+                <TextView
+                    android:id="@+id/customerCountry"
+                    style="@style/cartRowEndTextView"
+                    android:gravity="start"
+                    android:text="@string/profileIndia"
+                    android:layout_marginLeft="40dp">
+                </TextView>
+            </TableRow>
+
+        </TableLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/forgotPassword"-->
+<!--            style="@style/subHeadingName"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            android:textStyle="bold"-->
+<!--            android:text="@string/profileForgotPassword"/>-->
+    </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_margin="10dp"-->
+<!--            android:padding="10dp"-->
+<!--            android:orientation="vertical">-->
+<!--                <View-->
+<!--                style="@style/viewStyle">-->
+<!--                </View>-->
+
+<!--                <TableRow-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:weightSum="1">-->
+<!--                <TextView-->
+<!--                style="@style/cartRowStartTextView"-->
+<!--                android:text="@string/profileAddress">-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                android:id="@+id/customerAddress"-->
+<!--                style="@style/cartRowEndTextView"-->
+<!--                android:gravity="start"-->
+<!--                android:layout_marginLeft="40dp">-->
+<!--                </TextView>-->
+<!--                </TableRow>-->
+
+<!--                <View-->
+<!--                style="@style/viewStyle">-->
+<!--                </View>-->
+
+<!--                <TableRow-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:weightSum="1">-->
+<!--                <TextView-->
+<!--                style="@style/cartRowStartTextView"-->
+<!--                android:text="@string/profileCity">-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                android:id="@+id/customerCity"-->
+<!--                style="@style/cartRowEndTextView"-->
+<!--                android:gravity="start"-->
+<!--                android:layout_marginLeft="40dp">-->
+<!--                </TextView>-->
+<!--                </TableRow>-->
+<!--                <View-->
+<!--                style="@style/viewStyle">-->
+<!--                </View>-->
+
+<!--                <TableRow-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:weightSum="1">-->
+<!--                <TextView-->
+<!--                style="@style/cartRowStartTextView"-->
+<!--                android:text="@string/profileState">-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                android:id="@+id/customerState"-->
+<!--                style="@style/cartRowEndTextView"-->
+<!--                android:gravity="start"-->
+<!--                android:layout_marginLeft="40dp">-->
+<!--                </TextView>-->
+<!--                </TableRow>-->
+
+<!--                <View-->
+<!--                style="@style/viewStyle">-->
+<!--                </View>-->
+
+<!--                <TableRow-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:weightSum="1">-->
+<!--                <TextView-->
+<!--                style="@style/cartRowStartTextView"-->
+<!--                android:text="@string/profilePostalCode">-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                android:id="@+id/customerPostalCode"-->
+<!--                style="@style/cartRowEndTextView"-->
+<!--                android:gravity="start"-->
+<!--                android:layout_marginLeft="40dp">-->
+<!--                </TextView>-->
+<!--                </TableRow>-->
+
+<!--                <View-->
+<!--                style="@style/viewStyle">-->
+<!--                </View>-->
+
+<!--                <TableRow-->
+<!--                android:layout_marginBottom="5dp"-->
+<!--                android:weightSum="1">-->
+<!--                <TextView-->
+<!--                style="@style/cartRowStartTextView"-->
+<!--                android:text="@string/profileCountry">-->
+<!--                </TextView>-->
+<!--                <TextView-->
+<!--                android:id="@+id/customerCountry"-->
+<!--                style="@style/cartRowEndTextView"-->
+<!--                android:gravity="start"-->
+<!--                android:text="@string/profileIndia"-->
+<!--                android:layout_marginLeft="40dp">-->
+<!--                </TextView>-->
+<!--                </TableRow>-->
+<!--        </LinearLayout>-->
+
+
+
+
+</LinearLayout>

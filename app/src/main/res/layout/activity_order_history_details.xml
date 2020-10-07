@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.OrderHistoryDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/toolBar"
+        android:id="@+id/profileToolbar"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            style="@style/backStyle"
+            android:id="@+id/backBtn"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/toolBarHeading"
+                android:text="@string/orderHistoryDetails"
+                android:textColor="@color/whiteBackgroundColor"/>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:id="@+id/productList">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+                android:layout_marginTop="1dp"
+                style="@style/signUpTextView"
+                android:text="@string/shipingAddress"
+                android:layout_marginLeft="10dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/textColor"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/address_background"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/shippingFirstName"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/shippingLastName"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address : " />
+
+                    <TextView
+                        android:id="@+id/shippingAddress"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City : " />
+
+                    <TextView
+                        android:id="@+id/shippingLandmark"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.60">
+
+                        <TextView
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="State : " />
+
+                        <TextView
+                            android:id="@+id/shippingState"
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.40"
+                        android:layout_marginLeft="5dp">
+
+                        <TextView
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pin : " />
+
+                        <TextView
+                            android:id="@+id/shippingPostalCode"
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile : "
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/shippingMobileNumber"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                style="@style/signUpTextView"
+                android:text="@string/billingAddress"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/textColor"
+                android:layout_marginTop="5dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/address_background">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/billingFirstName"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/billingLastName"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address : " />
+
+                    <TextView
+                        android:id="@+id/billingAddress"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City : " />
+
+                    <TextView
+                        android:id="@+id/billingLandmark"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.60">
+
+                        <TextView
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="State : " />
+
+                        <TextView
+                            android:id="@+id/billingState"
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.40"
+                        android:layout_marginLeft="5dp">
+
+                        <TextView
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pin : " />
+
+                        <TextView
+                            android:id="@+id/billingPostalCode"
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile : "
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/billingMobileNumber"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                app:fontFamily="@font/avenir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Amount"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:textColor="#000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/textColor"
+                android:layout_marginTop="5dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/address_background"
+                android:padding="10dp"
+                android:stretchColumns="1"
+                xmlns:android="http://schemas.android.com/apk/res/android">
+                <TableRow
+                    android:layout_marginBottom="5dp">
+                    <TextView
+                        android:id="@+id/cartAmountTitle"
+                        style="@style/cartRowStartTextView"
+                        android:text="@string/total">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/cartAmount"
+                        style="@style/cartRowEndTextView">
+                    </TextView>
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

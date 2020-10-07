@@ -1,0 +1,397 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="splashAppName" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="headingName" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="subHeadingName" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="loginEditText" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:hint">@color/textColor</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/editTextColor</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="loginButton" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/button_green</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="toolBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="signUpTextView" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/registerTextColor</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="registerEditText" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:textColor">@color/editTextColor</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="searchView" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@drawable/search_view_background</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:drawableLeft">@drawable/search</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:textColor">@color/editTextColor</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="searchViewProductdescription" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">30dp</item>
+        <item name="android:drawableLeft">@drawable/search</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/editTextColor</item>
+        <item name="android:drawablePadding">5dp</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="cartRowStartTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="cartRowEndTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="cartPlaceOrderBtn">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">40dp</item>
+        <item name="android:textColor">@color/whiteBackgroundColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/cart_place_order_btn_background</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="cartStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd" tools:ignore="NewApi">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginEnd" tools:ignore="NewApi">1dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">1dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:src">@drawable/cart_one</item>
+    </style>
+
+    <style name="wishListStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentEnd" tools:ignore="NewApi">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_gravity">end</item>
+        <item name="android:layout_marginEnd" tools:ignore="NewApi">40dp</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">40dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:src">@drawable/wishlist_one</item>
+    </style>
+
+    <style name="cart_wishList_style" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentStart" tools:targetApi="jelly_bean_mr1">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_marginEnd" tools:targetApi="jelly_bean_mr1">10dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">10dp</item>
+        <item name="android:foreground">?android:selectableItemBackground</item>
+    </style>
+
+    <style name="badge_design" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentStart" tools:targetApi="jelly_bean_mr1">true</item>
+        <item name="android:layout_alignParentTop" tools:targetApi="jelly_bean_mr1">true</item>
+        <item name="android:layout_marginStart" tools:targetApi="jelly_bean_mr1">30dp</item>
+        <item name="android:background">@drawable/round_textview</item>
+        <item name="android:gravity">center</item>
+        <item name="android:text">0</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">9sp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_marginLeft">38dp</item>
+    </style>
+
+    <style name="toolBarHeading" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold|normal</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/editTextColor</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="backStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@color/colorPrimaryDark</item>
+        <!--<item name="android:src">@drawable/back</item>-->
+        <item name="android:src">@drawable/back_btn</item>
+        <!--<item name="android:layout_marginRight">2dp</item>-->
+    </style>
+
+    <style name="viewStyle" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:background">@color/textColor</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+    </style>
+
+    <style name="orderHistorySubHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/avenir</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="descriptionTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold|normal</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/avenir</item>
+    </style>
+
+    <style name="termsAndConditionsHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/avenir</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="termsAndConditionsSubHeading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/avenir</item>
+    </style>
+
+    <string name="termsAndConditions">
+        <![CDATA[
+        <h1>Terms and Conditions</h1>
+        <p>o The images you see will be dependent on your monitor\'s display and colour capabilities. We therefore are unable to guarantee that the product images you see are an accurate representation of the actual products.</p>
+        <p>o If you have any questions relating to any of our products or service and the information please <font color="blue"><u>get in touch</u></font>.</p>
+        <b>YOUR STATUTORY RIGHTS ARE NOT AFFECTED BY THE CONTENT OF THESE TERMS AND CONDITIONS.</b>
+        <h1>Delivery and Payment</h1>
+        <p>•	 Minimum order just 1 kg  to get a free delivery <font color="blue"><u>( up to 700 to 999gm- Rs. 5 per Kg; Up to 500-699 gm- Rs 10 per Kg and below 500gm -20 )</u></font>.</p>
+        <p>•	 Delivery charge for this service will depends on the Quantity of ordered products.</p>
+        <p>•	 Your order will be delivered by one of our friendly and knowledgeable person with ID proof.</p>
+        <p>• We usually deliver between the hours 7am to 12 pm.</p>
+        <p>• We endeavor to deliver at a time convenient to yourself - we request a delivery window of no less than two hours but ask that you be as flexible as possible with your delivery timings to assist our busy suppliers.</p>
+        <p>• Delivery times may be affected by unforeseeable circumstances such as road works/ vehicle breakdown, in which case you will be updated with a new approximate delivery time.</p>
+        <p>•	 We prefer payment at time of order through debit or credit card. Cash on delivery is also accepted. If both of these are not convenient for you, we will accept cheques also. Cheques should be made Payable to "Basix Krishi Samrudhi Limited". </p>
+        <p>•	 In case of advance monthly or weekly booking online, payment (100% payment or at least 50% advance payment) has to be given at the time of ordering by credit or debit card.</p>
+        <p>• Under certain circumstances our drivers are instructed to leave orders at a customer’s premises. We request the customers to inform the sales representative, in case of unavailability at the place of delivery and also suggest a suitable point of contact instead. If customers does not want to avail this service, it is worth mentioning at the time of placing order.</p>
+        <p>We will assure you that the product you ordered will reach in perfect condition. But still requesting you to check the product on receipt and in the unlikely event that you experience a problem with either your delivery or the product, you can complain to us within 2 hours of delivery.Please ensure that all perishable items are stored appropriately as soon as possible. All fresh products are suitable for home freezing and we recommend that this be carried out on day of delivery. Refer to the packaging for instructions.</p>
+        <h1>Customer Care</h1>
+        <p><b>QUALITY-</b> Should you have any concerns regarding a <b>FRESH</b> product, please inform us within 2 hours of delivery as this will enable us to resolve the matter in a timely manner.</p>
+        <p>We request that any concerns relating to CHILLED and FROZEN products be reported as soon as practically possible and that customers retain Batch Codes and Best Before/Use By Dates from the packaging to assist our investigations into reported quality issues.</p>
+        <p>If the product you get is not up to the mark, then please contact us immediately. We will replace it and also offer you discount in you next purchase.</p>
+        <p><b>DELIVERY-</b> Should you experience any problems relating to the condition of products on delivery please inform us as soon as is practically possible.</p>
+        <p><b>FRESH PREPARATION-</b> Should you experience any disappointment with preparation of your order, we request that you inform us within 2 hours of delivery.</p>
+        <p><b>MISSING PRODUCT-</b> Should a product be missing from your order, please inform us within 2 hours of delivery.</p>
+        <p><b>INCORRECT PRODUCT-</b> Should you discover that you have received an incorrect product please inform us as soon as is practically possible.</p>
+        <p>We recognize that the above may not encompass all concerns from our customers. We appreciate all comments and customers can be assured that all matters will be managed in a polite and professional manner.</p>
+        <p>Please contact us on. Our office is open from 09.30 am to 6pm  Monday to Saturday.</p>
+        <h1>Group on customers</h1>
+        <p>	 Offer available to new customers only.</p>
+        <p> Offer available to the traditional customer purchasing over free delivery</p>
+        <p>Refer to the Delivery and Payment section for further information about your delivery.</p>
+        <h1>Personal information</h1>
+        <p>In order to process your order, we collect personally identifiable information relating to you including your name, address, telephone number, email address, We will only use your personal information for the purpose for which you provide it to us, like response to enquiries, handling orders, delivering items, processing payments, communication to you with regard to order, products, services and promotional offers etc. We WILL NOT pass on any details about you to any person not directly employed by us, unless required to do so by law.</p>
+        <p>We will store customer delivery and contact details, as collected when an order is placed, to enable us to contact you again when we are next in your area. If you would like your details removing from our customer database, please contact our office or email us at <font color="blue"><u>guchi.kolkata@gmail.com</u></font> , stating your name, address and telephone number, including a request for us to remove your details.</p>
+        <h1>Call monitoring</h1>
+        <p>Telephone calls to New Gen Livelihood Plus Pvt. Ltd. may be recorded for quality monitoring purposes.</p>
+        <p>Customer enquiries are welcome - please contact us on +91-33-4601 8459/+91 85840 05244. Our office is open from 09.30 AM to 6.30 PM Monday to Saturday.</p>
+        ]]>
+    </string>
+
+    <string name="privacyPolicyListTwo">
+        <![CDATA[
+        <b>What Choice are available to you regarding collection, use and distribution of your information ?</b>
+        <p>To protect against the loss, misuse and alteration of the information under its control, <b>Guchi</b> has in place appropriate physical, electronic and managerial procedures. For example, <b>Guchi</b> servers are accessible only to authorized personnel and your information is shared with employees and authorized personnel on a need to know basis to complete the transaction and to provide the services requested by you. Although <b>Guchi</b> will endeavor to safeguard the confidentiality of your personally identifiable information, transmissions made by means of the Internet cannot be made absolutely secure. By using this site, you agree that <b>Guchi</b> will have no liability for disclosure of your information due to errors in transmission or unauthorized acts of third parties.</p>
+        <b>How can you correct inaccuracies in the information ?</b>
+        <p>To correct or update any information you have provided, the Site allows you to do it online. In the event of loss of access details you can send an e-mail to:</p>
+        <b>Policy updates</b>
+        <p><b>Guchi</b> reserves the right to change or update this policy at any time. Such changes shall be effective immediately upon posting to the Site.</p>
+        <b>Contact Information</b>
+        <p>NALBON FOOD PARK, SECTOR-IV, SALT LAKE CITY, PIN-700098</p>
+        <p>PHONE-+91 85840 05244/+91 33 4601 8459</p>
+        <p>WEB SITE- <font color="blue"><u>www.Guchi.com</u></font></p>
+        <p>Email- Guchi.kolkata@gmail.com</p>
+        ]]>
+    </string>
+
+    <string name="aboutUsText">
+        <![CDATA[
+        <p>Aajeevika Farm Fresh is supported by Jharkhand State Livelihood Promotion Society (JSLPS) under the aegis of  Rural Development Department, Government of Jharkhand.</p>
+        <p>It is run and manged by members of Self Help Groups (SHGs)   and Producer Groups (PGs) from rural pockets of Jharkhand where they collectivize   chemical free and pesticide free organic vegetables  and serve to the customers of nearby through its retail outlets after sorting, grading and packaging.  Farmers are registered under PGS ( Participatory Guarantee System) India.</p>
+        <p>Needless to mention these vegetables tastes better, are nutritious and as such boosts immune system. Remarkably they ensure safe and healthy world for future generation.</p>
+        <p>For further details, Please Contact</p>
+        <p>Mobile : 75430 56780</p>
+        <p>Email: <font color="blue"><u>aajeevikafarmfresh@gmail.com</u></font></p>
+        ]]>
+    </string>
+
+    <string name="aajeevikaPrivacyPolicyList">
+        <![CDATA[
+        <h1>Effective date: April  10, 2020</h1>
+        <p>This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.</p>
+        <p>We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy. Unless otherwise defined in this Privacy Policy, terms used in this Privacy Policy have the same meanings as in our Terms and Conditions.</p>
+        <p><b>Information Collection And Use</b></p>
+        <p>We collect several different types of information for various purposes to provide and improve our Service to you.</p>
+        <h1>Types of Data Collected</h1>
+        <p><b>Personal Data</b></p>
+        <p>While using our Service, we may ask you to provide us with certain personally identifiable information that can be used to contact or identify you ( Personal Data ). Personally identifiable information may include, but is not limited to:</p>
+        <p>• Email address</p>
+        <p>• First name and last name</p>
+        <p>• Phone number</p>
+        <p>• Address, State, District, Postal code, City</p>
+        <p>• Cookies and Usage Data</p>
+        <p><b>Usage Data</b></p>
+        <p>When you access the Service by or through a mobile device, we may collect certain information automatically, including, but not limited to, the type of mobile device you use, your mobile device unique ID, the IP address of your mobile device, your mobile operating system, the type of mobile Internet browser you use, unique device identifiers and other diagnostic data ( Usage Data ).</p>
+        <p><b>Tracking & Cookies Data</b></p>
+        <p>We use cookies and similar tracking technologies to track the activity on our Service and hold certain information.</p>
+        <p>Cookies are files with small amount of data which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your device. Tracking technologies also used are beacons, tags, and scripts to collect and track information and to improve and analyze our Service.</p>
+        <p>You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Service.</p>
+        <p>Examples of Cookies we use:</p>
+        <p>• <b>Session Cookies.</b> We use Session Cookies to operate our Service.</p>
+        <p>• <b>Preference Cookies.</b> We use Preference Cookies to remember your preferences and various settings.</p>
+        <p>• <b>Security Cookies.</b> We use Security Cookies for security purposes.</p>
+        <h1>Use of Data</h1>
+        <p>Aajeevika Farm Fresh uses the collected data for various purposes:</p>
+        <p>•	To provide and maintain the Service</p>
+        <p>•	To notify you about changes to our Service</p>
+        <p>•	To allow you to participate in interactive features of our Service when you choose to do so</p>
+        <p>•	To provide customer care and support</p>
+        <p>•	To provide analysis or valuable information so that we can improve the Service</p>
+        <p>•	To monitor the usage of the Service</p>
+        <p>•	To detect, prevent and address technical issues</p>
+        <h1>Transfer Of Data</h1>
+        <p>Your information, including Personal Data, may be transferred to and maintained on computers located outside of your state, district, country or other governmental jurisdiction where the data protection laws may differ than those from your jurisdiction.</p>
+        <p>If you are located outside India and choose to provide information to us, please note that we transfer the data, including Personal Data, to India and process it there.</p>
+        <p>Your consent to this Privacy Policy followed by your submission of such information represents your agreement to that transfer.</p>
+        <p>Aajeevika Farm Fresh will take all steps reasonably necessary to ensure that your data is treated securely and in accordance with this Privacy Policy and no transfer of your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of your data and other personal information.</p>
+        <h1>Disclosure Of Data</h1>
+        <p><b>Legal Requirements</b></p>
+        <p>Aajeevika Farm Fresh may disclose your Personal Data in the good faith belief that such action is necessary to:</p>
+        <p>•	To comply with a legal obligation</p>
+        <p>•	To protect and defend the rights or property of Aajeevika Farm Fresh</p>
+        <p>•	To prevent or investigate possible wrongdoing in connection with the Service</p>
+        <p>•	To protect the personal safety of users of the Service or the public</p>
+        <p>•	To protect against legal liability</p>
+        <p><b>Security Of Data</b></p>
+        <p>The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Data, we cannot guarantee its absolute security.</p>
+        <b>Service Providers</b>
+        <p>We may employ third party companies and individuals to facilitate our Service ( Service Providers ), to provide the Service on our behalf, to perform Service related services or to assist us in analyzing how our Service is used.</p>
+        <p>These third parties have access to your Personal Data only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.</p>
+        <b>Analytics</b>
+        <p>We may use third-party Service Providers to monitor and analyze the use of our Service.</p>
+        <p><b>•	Google Analytics</b></p>
+        <p>Google Analytics is a web analytics service offered by Google that tracks and reports website traffic. Google uses the data collected to track and monitor the use of our Service. This data is shared with other Google services. Google may use the collected data to contextualize and personalize the ads of its own advertising network.</p>
+        <p>You may opt out of certain Google Analytics features through your mobile device settings, such as your device advertising settings or by following the instructions provided by Google in their Privacy Policy: https://policies.google.com/privacy?hl=en</p>
+        <p>For more information on the privacy practices of Google, please visit the Google Privacy & Terms web page: https://policies.google.com/privacy?hl=en</p>
+        <h1>Links To Other Sites</h1>
+        <p>Our Service may contain links to other sites that are not operated by us. If you click on a third party link, you will be directed to that third party\'s site. We strongly advise you to review the Privacy Policy of every site you visit.</p>
+        <p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
+        <h1>Children\'s Privacy</h1>
+        <p>Our Service does not address anyone under the age of 18 ( Children ).</p>
+        <p>We do not knowingly collect personally identifiable information from anyone under the age of 18. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.</p>
+        <h1>Changes To This Privacy Policy</h1>
+        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+        <p>We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the effective date at the top of this Privacy Policy.</p>
+        <p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+        <h1>Contact Us</h1>
+        <p>If you have any questions about this Privacy Policy, please contact us:</p>
+        <p>•	   By email: aajeevikafarmfresh@gmail.com</p>
+
+
+        ]]>
+    </string>
+</resources>

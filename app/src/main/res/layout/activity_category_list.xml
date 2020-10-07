@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBackgroundColor"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".Activity.CategoryListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cartToolBar"
+        style="@style/toolBar"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            style="@style/backStyle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/toolBarHeading"
+                android:text="@string/categoryList"
+                android:textColor="@color/whiteBackgroundColor"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!--<ImageView-->
+            <!--style="@style/cartStyle"-->
+            <!--android:id="@+id/cartBtn"/>-->
+            <!--<ImageView-->
+            <!--android:id="@+id/wishListBtn"-->
+            <!--style="@style/wishListStyle" />-->
+
+            <RelativeLayout
+                style="@style/cartStyle"
+                android:onClick="cart">
+
+                <ImageButton
+                    android:id="@+id/cartBtn"
+                    style="@style/cart_wishList_style"
+                    android:background="@drawable/cart_one"
+                    android:onClick="cart" />
+
+                <TextView
+                    android:id="@+id/count_cart"
+                    style="@style/badge_design"
+                    android:onClick="cart"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="7dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                style="@style/wishListStyle"
+                android:onClick="wishList">
+
+                <ImageButton
+                    android:id="@+id/wishListBtn"
+                    style="@style/cart_wishList_style"
+                    android:background="@drawable/wishlist_one"
+                    android:onClick="wishList" />
+
+                <TextView
+                    android:id="@+id/count_wishList"
+                    style="@style/badge_design"
+                    android:onClick="wishList"
+                    tools:layout_editor_absoluteX="32dp"
+                    tools:layout_editor_absoluteY="7dp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/category_searchView"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/search_view_background"
+            app:queryHint="Enter Category Name">
+
+        </androidx.appcompat.widget.SearchView>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteBackgroundColor">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/homeViewPager"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/whiteBackgroundColor" />
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/sliderDots"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                app:tabBackground="@drawable/tab_selector"
+                app:tabGravity="center"
+                app:tabIndicatorHeight="0dp"
+                app:tabPaddingStart="8dp"
+                app:tabPaddingEnd="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/textColor"
+                android:layout_marginRight="10dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:nestedScrollingEnabled="false"
+                android:background="@color/whiteBackgroundColor"
+                android:id="@+id/categoryListRecyclerView"
+                android:padding="5dp">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <ImageView
+                android:id="@+id/emptyListIndicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/empty_list"
+                android:layout_marginTop="50dp"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/emptyListIndicator1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="List is Empty"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

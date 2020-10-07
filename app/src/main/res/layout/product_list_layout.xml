@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="10dp"
+    app:layout_goneMarginBottom="5dp"
+    android:id="@+id/productListLayout">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#dad3d3"
+            android:orientation="horizontal"
+            android:layout_weight="0.75"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="@color/textColor"
+                android:layout_weight="0.30">
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="7dp"
+                android:layout_weight="0.70">
+
+                <TextView
+                    app:fontFamily="@font/avenir"
+                    android:id="@+id/productName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hello World"
+                    android:textSize="15sp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    app:fontFamily="@font/avenir"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Price"
+                    android:textSize="12sp"
+                    android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_gravity="end">
+
+                    <Button
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:text="Add"
+                        android:textAllCaps="false"
+                        android:background="@drawable/button_green"
+                        android:textColor="#fff"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

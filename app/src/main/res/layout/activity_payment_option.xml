@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBackgroundColor"
+    android:orientation="vertical"
+    tools:context=".Activity.PaymentOptionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/toolBar"
+        android:id="@+id/cartToolBar"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            style="@style/backStyle"
+            android:id="@+id/backBtn"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/toolBarHeading"
+                android:text="@string/payment"
+                android:textColor="@color/whiteBackgroundColor"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    app:fontFamily="@font/avenir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Checkout"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:weightSum="1">
+
+                    <TextView
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Delivery Address"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_weight="0.50"/>
+
+                    <TextView
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="Select Address"
+                        android:textColor="#00f"
+                        android:gravity="end"
+                        android:textStyle="bold"
+                        android:textSize="15sp"
+                        android:layout_weight="0.50"
+                        android:id="@+id/changeAddress"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_margin="5dp"-->
+                <!--android:id="@+id/checkoutRecyclerView">-->
+
+            <!--</android.support.v7.widget.RecyclerView>-->
+
+            <LinearLayout
+                android:id="@+id/addressDetailsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/address_background"
+                android:layout_margin="10dp"
+                android:padding="10dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/customerFirstName"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/customerLastName"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="@color/editTextColor" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Address : " />
+
+                    <TextView
+                        android:id="@+id/customerAddress"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:weightSum="1">-->
+
+                    <!--<TextView-->
+                        <!--app:fontFamily="@font/avenir"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="Landmark : " />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/customerLandmark"-->
+                        <!--app:fontFamily="@font/avenir"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content" />-->
+
+                <!--</LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="City : " />
+
+                    <TextView
+                        android:id="@+id/customerCity"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="0.60">
+
+                        <TextView
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="State : " />
+
+                        <TextView
+                            android:id="@+id/customerState"
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="0.40"
+                        android:layout_marginLeft="5dp">
+
+                        <TextView
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pin : " />
+
+                        <TextView
+                            android:id="@+id/customerPostalCode"
+                            app:fontFamily="@font/avenir"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile : "
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/customerMobileNumber"
+                        app:fontFamily="@font/avenir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+<!--                <View-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_marginTop="5dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_marginLeft="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:background="@color/textColor"/>-->
+
+                <!--<TableLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:stretchColumns="1">-->
+
+                    <!--<TableRow-->
+                        <!--android:layout_marginBottom="5dp">-->
+                        <!--<TextView-->
+                            <!--style="@style/cartRowStartTextView"-->
+                            <!--android:text="@string/totalPayable"-->
+                            <!--android:textColor="@color/editTextColor">-->
+                        <!--</TextView>-->
+                        <!--<TextView-->
+                            <!--android:id="@+id/totalPrice"-->
+                            <!--style="@style/cartRowEndTextView"-->
+                            <!--android:text="@string/totalPayablePrice"-->
+                            <!--android:textColor="@color/editTextColor">-->
+                        <!--</TextView>-->
+                    <!--</TableRow>-->
+
+                <!--</TableLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_marginTop="5dp"-->
+                    <!--android:layout_marginBottom="5dp"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:background="@color/textColor"/>-->
+
+                <!--<Button-->
+                    <!--app:fontFamily="@font/avenir"-->
+                    <!--android:id="@+id/payOnlineBtn"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="10dp"-->
+                    <!--android:layout_marginRight="10dp"-->
+                    <!--android:text="Pay Online"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:background="#ec1d25"-->
+                    <!--android:textColor="#fff"-->
+                    <!--android:onClick="payOnline">-->
+                <!--</Button>-->
+
+                <Button
+                    android:id="@+id/payCODBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_green"
+                    android:onClick="payCod"
+                    android:text="Cash On Delivery"
+                    android:textAllCaps="false"
+                    android:textColor="#fff"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:fontFamily="@font/avenir"></Button>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    <!--</ScrollView>-->
+</LinearLayout>

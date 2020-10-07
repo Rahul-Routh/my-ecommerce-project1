@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBackgroundColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/whiteBackgroundColor"
+        android:orientation="vertical"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:id="@+id/signUpLayout"
+        tools:context=".Activity.SignUpActivity">
+
+        <androidx.appcompat.widget.Toolbar
+            style="@style/toolBar"
+            android:id="@+id/signUpToolBar"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageButton
+                style="@style/backStyle"
+                android:id="@+id/backBtn"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/toolBarHeading"
+                    android:text="@string/signUp"
+                    android:textColor="@color/whiteBackgroundColor"/>
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="20dp"
+            android:background="@color/whiteBackgroundColor">
+
+            <TextView
+                style="@style/headingName"
+                android:text="@string/register"
+                android:textSize="30sp" />
+
+            <TextView
+                style="@style/signUpTextView"
+                android:text="@string/yourPersonalDetails"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/textColor"
+                android:layout_marginTop="5dp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintFirstName"
+                android:layout_marginTop="20dp"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/colorAccent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_first_name"
+                    style="@style/registerEditText"
+                    android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintLastName"
+                android:layout_marginTop="20dp"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/colorAccent">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_last_name"
+                style="@style/registerEditText"
+                android:inputType="textCapWords"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintEmail"
+                android:layout_marginTop="20dp"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/colorAccent">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_email"
+                style="@style/registerEditText"
+                android:inputType="textEmailAddress"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintTelephone"
+                android:layout_marginTop="20dp"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/colorAccent">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_telephone"
+                style="@style/registerEditText"
+                android:inputType="phone"
+                android:maxLength="10"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--<TextView-->
+                <!--style="@style/signUpTextView"-->
+                <!--android:text="@string/registerFax" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_fax"-->
+                <!--style="@style/registerEditText"-->
+                <!--android:hint="@string/hintFax"-->
+                <!--android:inputType="number"/>-->
+
+            <!--<TextView-->
+                <!--style="@style/signUpTextView"-->
+                <!--android:text="@string/yourAddress" />-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/textColor"-->
+                <!--android:layout_marginTop="5dp"/>-->
+
+            <!--<TextView-->
+                <!--style="@style/signUpTextView"-->
+                <!--android:text="@string/registerCompany" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_company"-->
+                <!--style="@style/registerEditText"-->
+                <!--android:hint="@string/hintCompany"-->
+                <!--android:inputType="text"/>-->
+
+            <!--<TextView-->
+                <!--style="@style/signUpTextView"-->
+                <!--android:text="@string/registerAddress1" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_address1"-->
+                <!--style="@style/registerEditText"-->
+                <!--android:hint="@string/hintAddress1"-->
+                <!--android:inputType="text"/>-->
+
+            <!--<TextView-->
+                <!--style="@style/signUpTextView"-->
+                <!--android:text="@string/registerAddress2" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_address2"-->
+                <!--style="@style/registerEditText"-->
+                <!--android:hint="@string/hintAddress2"-->
+                <!--android:inputType="text"/>-->
+
+            <!--<TextView-->
+                <!--style="@style/signUpTextView"-->
+                <!--android:text="@string/registerCity" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_city"-->
+                <!--style="@style/registerEditText"-->
+                <!--android:hint="@string/hintCity"-->
+                <!--android:inputType="text"/>-->
+
+            <!--<TextView-->
+                <!--style="@style/signUpTextView"-->
+                <!--android:text="@string/registerPostCode" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_post_code"-->
+                <!--style="@style/registerEditText"-->
+                <!--android:hint="@string/hintPostCode"-->
+                <!--android:inputType="number"-->
+                <!--android:maxLength="6"/>-->
+
+            <!--<TextView-->
+                <!--style="@style/signUpTextView"-->
+                <!--android:text="@string/registerState" />-->
+
+            <!--&lt;!&ndash;<EditText&ndash;&gt;-->
+                <!--&lt;!&ndash;android:id="@+id/et_state"&ndash;&gt;-->
+                <!--&lt;!&ndash;style="@style/registerEditText"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:hint="@string/hintState"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:inputType="text"/>&ndash;&gt;-->
+
+            <!--<Spinner-->
+                <!--android:id="@+id/stateSpinner"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@drawable/state_list_background"-->
+                <!--android:layout_marginTop="5dp">-->
+
+            <!--</Spinner>-->
+
+            <!--<TextView-->
+                <!--style="@style/signUpTextView"-->
+                <!--android:text="@string/registerCountry" />-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/et_country"-->
+                <!--style="@style/registerEditText"-->
+                <!--android:text="@string/hintCountry"-->
+                <!--android:focusable="false"-->
+                <!--android:inputType="text"/>-->
+
+            <!--<TextView-->
+                <!--style="@style/signUpTextView"-->
+                <!--android:text="@string/yourPassword" />-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/textColor"-->
+                <!--android:layout_marginTop="5dp"/>-->
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintPassword"
+                android:layout_marginTop="20dp"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/colorAccent">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password"
+                    style="@style/registerEditText"
+                    android:inputType="textPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hintConfirmPassword"
+                android:layout_marginTop="20dp"
+                app:boxStrokeColor="@color/colorAccent"
+                app:hintTextColor="@color/colorAccent">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_repeat_password"
+                style="@style/registerEditText"/>
+            </com.google.android.material.textfield.TextInputLayout>
+            <!--<TextView-->
+                <!--style="@style/signUpTextView"-->
+                <!--android:text="@string/registerNewsletter" />-->
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="@color/textColor"-->
+                <!--android:layout_marginTop="5dp"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/whiteBackgroundColor"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--style="@style/subHeadingName"-->
+                    <!--android:text="@string/registerSubscribe"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:textSize="15sp"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textColor="@color/registerTextColor"-->
+                    <!--android:layout_marginRight="30dp"/>-->
+
+                <!--<RadioGroup-->
+                    <!--android:id="@+id/newsLetterRadioBtn"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:layout_marginTop="10dp">-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/radioYes"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:checked="true"-->
+                        <!--android:layout_marginRight="20dp"-->
+                        <!--android:text="@string/registerRadioYes"/>-->
+
+                    <!--<RadioButton-->
+                        <!--android:id="@+id/radioNo"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:checked="false"-->
+                        <!--android:text="@string/registerRadioNo"/>-->
+
+                <!--</RadioGroup>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:layout_marginTop="15dp">-->
+
+                <!--<CheckBox-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/privacyPolicyCheckbox"-->
+                    <!--android:layout_marginRight="5dp"/>-->
+
+                <!--<TextView-->
+                    <!--style="@style/signUpTextView"-->
+                    <!--android:textSize="14sp"-->
+                    <!--android:layout_marginTop="0dp"-->
+                    <!--android:text="@string/privacyPolicy" />-->
+
+            <!--</LinearLayout>-->
+
+            <Button
+                style="@style/loginButton"
+                android:layout_marginTop="20dp"
+                android:text="@string/signUp_button"
+                android:id="@+id/signUpBtn"
+                android:background="@drawable/button_green"
+                android:textColor="#fff"
+                android:onClick="submitSignUpDetails"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

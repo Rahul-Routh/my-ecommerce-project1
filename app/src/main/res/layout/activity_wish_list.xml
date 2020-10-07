@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBackgroundColor"
+    android:orientation="vertical"
+    tools:context=".Activity.WishListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        style="@style/toolBar"
+        android:id="@+id/wishListToolBar"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            style="@style/backStyle"
+            android:id="@+id/backBtn"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/toolBarHeading"
+                android:text="@string/wishlist"
+                android:textColor="@color/whiteBackgroundColor"/>
+
+        </LinearLayout>
+
+        <!--<ImageView-->
+            <!--style="@style/cartStyle"-->
+            <!--android:id="@+id/cartBtn"/>-->
+
+        <RelativeLayout
+            android:onClick="cart"
+            style="@style/cartStyle">
+            <ImageButton
+                android:onClick="cart"
+                android:id="@+id/cartBtn"
+                style="@style/cart_wishList_style"
+                android:background="@drawable/cart_one"/>
+
+            <TextView
+                android:onClick="cart"
+                android:id="@+id/count_cart"
+                style="@style/badge_design"
+                tools:layout_editor_absoluteX="32dp"
+                tools:layout_editor_absoluteY="7dp"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/whiteBackgroundColor"
+            android:id="@+id/wishListRecyclerView">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <ImageView
+            android:id="@+id/emptyListIndicator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/empty_list"
+            android:layout_marginTop="50dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/emptyListIndicator1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="List is Empty"
+            android:gravity="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TableRow
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:id="@+id/cartAmountTitle"
+                style="@style/cartRowStartTextView"
+                android:text="@string/total">
+            </TextView>
+            <TextView
+                android:id="@+id/cartAmount"
+                style="@style/cartRowEndTextView"
+                android:text="@string/totalPrice">
+            </TextView>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

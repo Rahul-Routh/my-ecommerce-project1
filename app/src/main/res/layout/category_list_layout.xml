@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/category_layout"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/productType"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/rawFishImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:background="@drawable/image_not_available"
+            android:scaleType="centerCrop"
+            android:layout_weight="0.80">
+
+        </ImageView>
+
+        <!--<ImageView-->
+        <!--android:id="@+id/rawFishImage"-->
+        <!--android:layout_width="140dp"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:background="@drawable/background"/>-->
+
+        <TextView
+            app:fontFamily="@font/avenir"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.20"
+            android:text="Hello"
+            android:textSize="11sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:id="@+id/textView"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteBackgroundColor"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Activity.SplashScreenActivity">
+
+    <!--<TextView-->
+        <!--style="@style/splashAppName"-->
+        <!--android:text="@string/appName"-->
+        <!--android:textSize="35sp"/>-->
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:elevation="5dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/red"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="22sp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/avenir"
+        android:text="Jharkhand State Livelihood Promotion Society"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="27sp"
+        android:fontFamily="@font/avenir"
+        android:text="Rural Development Department, GoJ"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_margin="20dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/imageOne"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.22"
+            android:scaleType="fitXY"
+            android:src="@drawable/pc_web_logo"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.56"/>
+
+        <ImageView
+            android:id="@+id/imageTwo"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="0.22"
+            android:scaleType="fitXY"
+            android:src="@drawable/indian_flag_logo" />
+
+    </LinearLayout>
+
+</LinearLayout>

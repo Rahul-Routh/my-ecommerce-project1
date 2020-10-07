@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_weight="0.70">
+
+            <TextView
+                android:id="@+id/orderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Id : "/>
+
+            <TextView
+                android:id="@+id/totalPrice"
+                style="@style/orderHistorySubHeading"
+                android:text="Total Price : "/>
+
+            <TextView
+                android:id="@+id/telephone"
+                style="@style/orderHistorySubHeading"
+                android:text="Mobile : "/>
+
+            <TextView
+                android:id="@+id/orderStatus"
+                style="@style/orderHistorySubHeading"
+                android:text="Order Status : "/>
+
+            <TextView
+                android:id="@+id/date"
+                style="@style/orderHistorySubHeading"
+                android:text="Order Date : "/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            android:gravity="bottom"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <Button
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:background="@drawable/button_green"
+                android:textColor="#fff"
+                android:text="Details"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+

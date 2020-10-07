@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <group android:checkableBehavior="none">
+    <item
+        app:fontFamily="@font/avenir"
+        android:id="@+id/navHome"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        app:fontFamily="@font/avenir"
+        android:id="@+id/navProfile"
+        android:icon="@drawable/profile"
+        android:title="Profile"
+        app:showAsAction="ifRoom" />
+
+    <item
+        app:fontFamily="@font/avenir"
+        android:id="@+id/navOrderHistory"
+        android:icon="@drawable/cart"
+        android:title="Orders history"
+        app:showAsAction="ifRoom" />
+
+    <!--<item-->
+        <!--app:fontFamily="@font/avenir"-->
+        <!--android:id="@+id/navGalley"-->
+        <!--android:icon="@drawable/gallery"-->
+        <!--android:orderInCategory="100"-->
+        <!--android:title="Gallery"-->
+        <!--app:showAsAction="ifRoom" />-->
+
+    <item
+        app:fontFamily="@font/avenir"
+        android:id="@+id/navAddressList"
+        android:icon="@drawable/address"
+        android:title="Address List"
+        app:showAsAction="ifRoom" />
+
+    <item
+        app:fontFamily="@font/avenir"
+        android:id="@+id/navLogout"
+        android:icon="@drawable/logout"
+        android:title="Logout"
+        app:showAsAction="ifRoom" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+        <item
+            app:fontFamily="@font/avenir"
+            android:id="@+id/privacyPolicy"
+            android:icon="@drawable/privacy_policy"
+            android:title="Privacy Policy"
+            app:showAsAction="ifRoom" />
+        <item
+            app:fontFamily="@font/avenir"
+            android:id="@+id/navContactUs"
+            android:icon="@drawable/contact_us"
+            android:title="Contact us"
+            app:showAsAction="ifRoom" />
+
+
+    <!--    <item-->
+    <!--        app:fontFamily="@font/avenir"-->
+    <!--        android:id="@+id/navTerms"-->
+    <!--        android:icon="@drawable/terms_and_conditions"-->
+    <!--        android:orderInCategory="100"-->
+    <!--        android:title="Term's and Conditions"-->
+    <!--        app:showAsAction="ifRoom" />-->
+
+
+        <item
+            app:fontFamily="@font/avenir"
+            android:id="@+id/navAboutUs"
+            android:icon="@drawable/about_us"
+            android:title="About us"
+            app:showAsAction="ifRoom" />
+        </menu>
+    </item>
+
+</menu>

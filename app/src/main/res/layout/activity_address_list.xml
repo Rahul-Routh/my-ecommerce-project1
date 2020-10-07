@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/whiteBackgroundColor"
+    tools:context=".Activity.AddressListActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/cartToolBar"
+        style="@style/toolBar"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            style="@style/backStyle" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/toolBarHeading"
+                android:text="@string/addressList"
+                android:textColor="@color/whiteBackgroundColor"/>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/addAddressDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/add"
+            android:layout_marginRight="10dp"/>
+
+        <TextView
+            app:fontFamily="@font/avenir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add Delivery Address"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <TextView
+        app:fontFamily="@font/avenir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address List"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/textColor"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/addressListRecyclerView">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

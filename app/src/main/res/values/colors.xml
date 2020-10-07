@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#3F51B5</color>
+<!--    <color name="colorPrimaryDark">#30c641</color>-->
+    <color name="colorPrimaryDark">#3F51B5</color>
+<!--    <color name="colorAccent">#ec1d25</color>-->
+<!--    <color name="colorAccent">#FFA500</color>-->
+<!--    <color name="colorAccent">#30c641</color>-->
+    <color name="colorAccent">#3F51B5</color>
+    <color name="textColor">#FF9F9F9F</color>
+    <color name="whiteBackgroundColor">#ffffff</color>
+    <color name="red">#EE0505</color>
+    <color name="black">#000</color>
+    <color name="green">#30c641</color>
+    <color name="registerTextColor">#000</color>
+    <color name="editTextColor">#000</color>
+    <color name="productName">#000</color>
+    <color name="colorWhite">#917a7a</color>
+    <color name="colorTransparentWhite">#cccccc</color>
+    <color name="row_background_dark_start">#cccccc</color>
+    <color name="product_background_lite">#F6F6F6</color>
+    <color name="see_all">#F0F4365C</color>
+
+</resources>
