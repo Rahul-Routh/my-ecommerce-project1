@@ -11,7 +11,7 @@ android {
 //    }
     compileSdkVersion 29
     defaultConfig {
-        applicationId "com.purpuligo.ajeevikafarmfresh"
+        applicationId "com.purpuligo.pcweb"
         minSdkVersion 14
         targetSdkVersion 29
         versionCode 7

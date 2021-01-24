@@ -78,6 +78,8 @@
     <string name="productDescription">Product Description</string>
     <string name="frequentlyBought">Frequently Bought Together</string>
     <string name="availableSlot">Your available slot : </string>
+    <string name="description">Product Description: </string>
+
 
     <string name="featuresName">Features</string>
     <string name="infoName">Info</string>

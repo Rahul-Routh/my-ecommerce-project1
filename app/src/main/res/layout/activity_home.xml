@@ -190,12 +190,47 @@
                     android:src="@drawable/network_state"
                     android:visibility="gone" />
 
-                <LinearLayout
+            <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5dp"
+                    android:layout_marginTop="2dp"
                     android:background="@color/whiteBackgroundColor"
                     android:orientation="vertical">
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:background="@drawable/side_scroll_background_blue"
+                        android:weightSum="10"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="3dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2">
+
+                            <TextView
+                                android:id="@+id/textGrid"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Deals of the Day"
+                                android:textColor="@color/whiteBackgroundColor"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                        </RelativeLayout>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_margin="5dp"-->
+<!--                    android:background="@color/whiteBackgroundColor"-->
+<!--                    android:orientation="vertical">-->
 
                     <!--<TextView-->
                     <!--android:id="@+id/rawFishParentName"-->
@@ -210,12 +245,15 @@
                         android:id="@+id/homeRawFishRecyclerView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginRight="3dp"
+                        android:layout_marginBottom="3dp"
                         android:background="@null"
                         android:nestedScrollingEnabled="false"
                         android:orientation="horizontal">
 
                     </androidx.recyclerview.widget.RecyclerView>
-
+                    </LinearLayout>
                 </LinearLayout>
 
 <!--                <View-->
@@ -252,14 +290,302 @@
 <!--                    android:layout_marginLeft="5dp"/>-->
 <!--            </LinearLayout>-->
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/whiteBackgroundColor"
-                    android:orientation="vertical">
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@color/whiteBackgroundColor"-->
+<!--                    android:orientation="vertical">-->
+<!--                    <LinearLayout-->
+<!--                        android:orientation="vertical"-->
+<!--                        android:background="@drawable/side_scroll_background_blue"-->
+<!--                        android:weightSum="10"-->
+<!--                        android:layout_marginRight="8dp"-->
+<!--                        android:layout_marginLeft="8dp"-->
+<!--                        android:layout_marginBottom="5dp"-->
+<!--                        android:elevation="3dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="match_parent">-->
 
-                    <include layout="@layout/horizontal_scroll_layout"/>
-                </LinearLayout>
+<!--                        <RelativeLayout-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_weight="2">-->
+
+<!--                            <TextView-->
+<!--                                android:id="@+id/textGrid2"-->
+<!--                                android:layout_width="wrap_content"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_marginTop="10dp"-->
+<!--                                android:layout_marginLeft="15dp"-->
+<!--                                android:layout_marginBottom="10dp"-->
+<!--                                android:text="Deals of the Day"-->
+<!--                                android:textColor="@color/whiteBackgroundColor"-->
+<!--                                android:textSize="16sp"-->
+<!--                                android:textStyle="bold" />-->
+
+<!--                        </RelativeLayout>-->
+
+<!--                        <GridLayout-->
+<!--                            android:id="@+id/mainGrid"-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_weight="8"-->
+<!--                            android:alignmentMode="alignMargins"-->
+<!--                            android:columnCount="2"-->
+<!--                            android:columnOrderPreserved="false"-->
+<!--                            android:rowCount="2">-->
+
+<!--                            &lt;!&ndash; Row 0 &ndash;&gt;-->
+<!--                            &lt;!&ndash; Column 0 &ndash;&gt;-->
+<!--                            <androidx.cardview.widget.CardView-->
+<!--                                android:layout_width="0dp"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_rowWeight="1"-->
+<!--                                android:layout_columnWeight="1"-->
+<!--                                android:layout_marginLeft="10dp"-->
+<!--                                android:layout_marginRight="5dp"-->
+<!--                                android:layout_marginTop="5dp"-->
+<!--                                android:layout_marginBottom="5dp"-->
+<!--                                android:background="@drawable/side_srcoll_background_white"-->
+<!--                                app:cardCornerRadius="8dp"-->
+<!--                                app:cardElevation="8dp">-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                                    android:layout_margin="10dp"-->
+<!--                                    android:orientation="vertical">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/pic1"-->
+<!--                                        android:layout_width="75dp"-->
+<!--                                        android:layout_height="75dp"-->
+<!--                                        android:layout_gravity="center"-->
+<!--                                        android:src="@drawable/bed" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:layout_marginTop="5dp"-->
+<!--                                        android:text="Beds"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textColor="@android:color/black"-->
+<!--                                        android:textSize="14sp"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:text="Up to 25% off"-->
+<!--                                        android:layout_marginTop="5dp"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textColor="@color/green"-->
+<!--                                        android:textSize="12sp"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:text="From ₹10000"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textSize="10sp"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                </LinearLayout>-->
+
+<!--                            </androidx.cardview.widget.CardView>-->
+
+<!--                            &lt;!&ndash; Row 0 &ndash;&gt;-->
+<!--                            &lt;!&ndash; Column 1 &ndash;&gt;-->
+<!--                            <androidx.cardview.widget.CardView-->
+<!--                                android:layout_width="0dp"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_rowWeight="1"-->
+<!--                                android:layout_columnWeight="1"-->
+<!--                                android:layout_marginTop="5dp"-->
+<!--                                android:layout_marginLeft="5dp"-->
+<!--                                android:layout_marginRight="10dp"-->
+<!--                                android:layout_marginBottom="5dp"-->
+<!--                                android:background="@drawable/side_srcoll_background_white"-->
+<!--                                app:cardCornerRadius="8dp"-->
+<!--                                app:cardElevation="8dp">-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                                    android:layout_margin="10dp"-->
+<!--                                    android:orientation="vertical">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/pic2"-->
+<!--                                        android:layout_width="75dp"-->
+<!--                                        android:layout_height="75dp"-->
+<!--                                        android:layout_gravity="center"-->
+<!--                                        android:src="@drawable/laptop_table" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:layout_marginTop="5dp"-->
+<!--                                        android:text="Desktop and Laptop Table"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textColor="@android:color/black"-->
+<!--                                        android:textSize="14sp"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:text="Up to 10% off"-->
+<!--                                        android:layout_marginTop="5dp"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textColor="@color/green"-->
+<!--                                        android:textSize="12sp"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:text="Starting ₹4,000"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textSize="10sp"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                </LinearLayout>-->
+
+<!--                            </androidx.cardview.widget.CardView>-->
+
+<!--                            &lt;!&ndash; Row 1 &ndash;&gt;-->
+<!--                            &lt;!&ndash; Column 0 &ndash;&gt;-->
+<!--                            <androidx.cardview.widget.CardView-->
+<!--                                android:layout_width="0dp"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_rowWeight="1"-->
+<!--                                android:layout_columnWeight="1"-->
+<!--                                android:layout_marginTop="5dp"-->
+<!--                                android:layout_marginLeft="10dp"-->
+<!--                                android:layout_marginRight="5dp"-->
+<!--                                android:layout_marginBottom="10dp"-->
+<!--                                android:background="@drawable/side_srcoll_background_white"-->
+<!--                                app:cardCornerRadius="8dp"-->
+<!--                                app:cardElevation="8dp">-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                                    android:layout_margin="10dp"-->
+<!--                                    android:orientation="vertical">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/pic3"-->
+<!--                                        android:layout_width="75dp"-->
+<!--                                        android:layout_height="75dp"-->
+<!--                                        android:layout_gravity="center"-->
+<!--                                        android:src="@drawable/chair" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:layout_marginTop="5dp"-->
+<!--                                        android:text="Chair"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textColor="@android:color/black"-->
+<!--                                        android:textSize="14sp"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:text="Min 30% off"-->
+<!--                                        android:layout_marginTop="5dp"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textColor="@color/green"-->
+<!--                                        android:textSize="12sp"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:text="Under ₹9000"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textSize="10sp"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                </LinearLayout>-->
+
+<!--                            </androidx.cardview.widget.CardView>-->
+
+<!--                            &lt;!&ndash; Row 1 &ndash;&gt;-->
+<!--                            &lt;!&ndash; Column 1 &ndash;&gt;-->
+<!--                            <androidx.cardview.widget.CardView-->
+<!--                                android:layout_width="0dp"-->
+<!--                                android:layout_height="wrap_content"-->
+<!--                                android:layout_rowWeight="1"-->
+<!--                                android:layout_columnWeight="1"-->
+<!--                                android:layout_marginTop="5dp"-->
+<!--                                android:layout_marginLeft="5dp"-->
+<!--                                android:layout_marginRight="10dp"-->
+<!--                                android:layout_marginBottom="10dp"-->
+<!--                                android:background="@drawable/side_srcoll_background_white"-->
+<!--                                app:cardCornerRadius="8dp"-->
+<!--                                app:cardElevation="8dp">-->
+
+<!--                                <LinearLayout-->
+<!--                                    android:layout_width="wrap_content"-->
+<!--                                    android:layout_height="wrap_content"-->
+<!--                                    android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                                    android:layout_margin="10dp"-->
+<!--                                    android:orientation="vertical">-->
+
+<!--                                    <ImageView-->
+<!--                                        android:id="@+id/pic4"-->
+<!--                                        android:layout_width="75dp"-->
+<!--                                        android:layout_height="75dp"-->
+<!--                                        android:layout_gravity="center"-->
+<!--                                        android:src="@drawable/sofa" />-->
+
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:layout_marginTop="5dp"-->
+<!--                                        android:text="Sofa"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textColor="@android:color/black"-->
+<!--                                        android:textSize="14sp"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:text="Flat 50% off"-->
+<!--                                        android:layout_marginTop="5dp"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textColor="@color/green"-->
+<!--                                        android:textSize="12sp"-->
+<!--                                        android:textStyle="bold" />-->
+<!--                                    <TextView-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:layout_gravity="center_horizontal"-->
+<!--                                        android:text="From ₹10000"-->
+<!--                                        android:textAlignment="center"-->
+<!--                                        android:textSize="10sp"-->
+<!--                                        android:textStyle="bold" />-->
+
+<!--                                </LinearLayout>-->
+<!--                            </androidx.cardview.widget.CardView>-->
+<!--                        </GridLayout>-->
+<!--                    </LinearLayout>-->
+<!--     &lt;!&ndash;<include layout="@layout/horizontal_scroll_layout"/>&ndash;&gt;-->
+
+<!--                </LinearLayout>-->
 
 
 
@@ -299,14 +625,14 @@
                 android:layout_marginLeft="5dp"
                 android:layout_marginRight="5dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/banner_two"/>
+                android:src="@drawable/banner_one"/>
                 <TextView
                     app:fontFamily="@font/avenir"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="14sp"
                     android:textStyle="bold"
-                    android:text="Dish"
+                    android:text="Top Home Furniture"
                     android:layout_gravity="center"
                     android:layout_marginLeft="5dp"/>
             </LinearLayout>

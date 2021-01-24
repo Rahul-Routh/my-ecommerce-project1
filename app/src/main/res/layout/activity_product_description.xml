@@ -24,14 +24,14 @@
             android:orientation="horizontal"
             style="@style/searchViewProductdescription">
 
-            <androidx.appcompat.widget.SearchView
-                android:id="@+id/searchView"
-                android:layout_width="203dp"
-                android:layout_height="35dp"
-                android:background="@drawable/search_view_background"
-                app:queryHint="Enter Product Name">
+<!--            <androidx.appcompat.widget.SearchView-->
+<!--                android:id="@+id/searchView"-->
+<!--                android:layout_width="158dp"-->
+<!--                android:layout_height="35dp"-->
+<!--                android:background="@drawable/search_view_background"-->
+<!--                app:queryHint="Enter Product Name">-->
 
-            </androidx.appcompat.widget.SearchView>
+<!--            </androidx.appcompat.widget.SearchView>-->
 
         </LinearLayout>
 
@@ -201,7 +201,7 @@
                     android:background="@color/whiteBackgroundColor"
                     android:layout_marginTop="2dp">
                     <TextView
-                        android:text="@string/availableSlot"
+                        android:text="@string/productDescription"
                         android:textStyle="bold"
                         android:layout_marginLeft="5dp"
                         android:layout_marginRight="5dp" />
@@ -250,9 +250,9 @@
 
                 <TableLayout
                     android:id="@+id/sizeOptionLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="6dp"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+
                     android:background="@drawable/search_view_background">
                     <TableRow
                         android:weightSum="1">
@@ -276,6 +276,9 @@
                         </Spinner>
                     </TableRow>
                 </TableLayout>
+
+
+
 
                 <!--<TableLayout-->
                     <!--android:layout_marginTop="5dp"-->
@@ -446,41 +449,41 @@
                 </LinearLayout>
 
 
-                <com.google.android.material.tabs.TabLayout
-                    android:id="@+id/product_details_tabLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/whiteBackgroundColor"
-                    app:tabTextColor="@color/textColor"
-                    app:tabSelectedTextColor="@color/colorAccent"
-                    app:tabIndicatorColor="@color/colorAccent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-                    <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tabFeatures"
-                        app:fontFamily="@font/avenir"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/featuresName">
-                    </com.google.android.material.tabs.TabItem>
+<!--                <com.google.android.material.tabs.TabLayout-->
+<!--                    android:id="@+id/product_details_tabLayout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@color/whiteBackgroundColor"-->
+<!--                    app:tabTextColor="@color/textColor"-->
+<!--                    app:tabSelectedTextColor="@color/colorAccent"-->
+<!--                    app:tabIndicatorColor="@color/colorAccent"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toTopOf="parent">-->
+<!--                    <com.google.android.material.tabs.TabItem-->
+<!--                        android:id="@+id/tabFeatures"-->
+<!--                        app:fontFamily="@font/avenir"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/featuresName">-->
+<!--                    </com.google.android.material.tabs.TabItem>-->
 
-                    <com.google.android.material.tabs.TabItem
-                        android:id="@+id/tabInfo"
-                        app:fontFamily="@font/avenir"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="@string/infoName" />
-                </com.google.android.material.tabs.TabLayout>
+<!--                    <com.google.android.material.tabs.TabItem-->
+<!--                        android:id="@+id/tabInfo"-->
+<!--                        app:fontFamily="@font/avenir"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:text="@string/infoName" />-->
+<!--                </com.google.android.material.tabs.TabLayout>-->
 
-                <androidx.viewpager.widget.ViewPager
-                    android:id="@+id/product_details_viewpager"
-                    android:layout_width="wrap_content"
-                    android:layout_height="380dp"
-                    android:background="@color/whiteBackgroundColor"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/product_details_tabLayout" />
+<!--                <androidx.viewpager.widget.ViewPager-->
+<!--                    android:id="@+id/product_details_viewpager"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="380dp"-->
+<!--                    android:background="@color/whiteBackgroundColor"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/product_details_tabLayout" />-->
 
 
 <!--                <TableLayout-->

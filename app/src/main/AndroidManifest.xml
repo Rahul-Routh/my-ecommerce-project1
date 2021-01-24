@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.purpuligo.ajeevikafarmfresh">
+    package="com.purpuligo.pcweb">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -14,9 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Activity.ContactUsActivity"></activity>
+        <activity android:name="com.purpuligo.pcweb.Activity.ContactUsActivity"></activity>
         <activity
-            android:name=".Activity.SplashScreenActivity"
+            android:name="com.purpuligo.pcweb.Activity.SplashScreenActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -25,72 +25,72 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.LoginActivity"
+            android:name="com.purpuligo.pcweb.Activity.LoginActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.SignUpActivity"
+            android:name="com.purpuligo.pcweb.Activity.SignUpActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".Activity.HomeActivity"
+            android:name="com.purpuligo.pcweb.Activity.HomeActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden" />
         <activity
-            android:name=".Activity.CartActivity"
+            android:name="com.purpuligo.pcweb.Activity.CartActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.ProductListActivity"
+            android:name="com.purpuligo.pcweb.Activity.ProductListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.WishListActivity"
+            android:name="com.purpuligo.pcweb.Activity.WishListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.ProductDescriptionActivity"
+            android:name="com.purpuligo.pcweb.Activity.ProductDescriptionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.PaymentOptionActivity"
+            android:name="com.purpuligo.pcweb.Activity.PaymentOptionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.CodOrderSummeryActivity"
+            android:name="com.purpuligo.pcweb.Activity.CodOrderSummeryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.AddressListActivity"
+            android:name="com.purpuligo.pcweb.Activity.AddressListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.ProfileActivity"
+            android:name="com.purpuligo.pcweb.Activity.ProfileActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.OrderHistoryActivity"
+            android:name="com.purpuligo.pcweb.Activity.OrderHistoryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.GalleryActivity"
+            android:name="com.purpuligo.pcweb.Activity.GalleryActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.AboutUsActivity"
+            android:name="com.purpuligo.pcweb.Activity.AboutUsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.TermAndConditionActivity"
+            android:name="com.purpuligo.pcweb.Activity.TermAndConditionActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.OnBoardingScreenActivity"
+            android:name="com.purpuligo.pcweb.Activity.OnBoardingScreenActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.ForgotPasswordActivity"
+            android:name="com.purpuligo.pcweb.Activity.ForgotPasswordActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.PrivacyPolicyActivity"
+            android:name="com.purpuligo.pcweb.Activity.PrivacyPolicyActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.CustomerDetailsActivity"
+            android:name="com.purpuligo.pcweb.Activity.CustomerDetailsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.EditUserDetailsActivity"
+            android:name="com.purpuligo.pcweb.Activity.EditUserDetailsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.OrderHistoryDetailsActivity"
+            android:name="com.purpuligo.pcweb.Activity.OrderHistoryDetailsActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.CheckoutAddressListActivity"
+            android:name="com.purpuligo.pcweb.Activity.CheckoutAddressListActivity"
             android:screenOrientation="portrait" />
 
         <meta-data
@@ -98,15 +98,15 @@
             android:value="http://purpuligo.com/guchhi/access_token.php" />
 
         <activity
-            android:name=".Activity.CategoryListActivity"
+            android:name="com.purpuligo.pcweb.Activity.CategoryListActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.SearchResultActivity"
+            android:name="com.purpuligo.pcweb.Activity.SearchResultActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Activity.SubCategoryActivity"
+            android:name="com.purpuligo.pcweb.Activity.SubCategoryActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".Activity.OrderPlacedActivity"
+        <activity android:name="com.purpuligo.pcweb.Activity.OrderPlacedActivity"
             android:screenOrientation="portrait" />
     </application>
 
